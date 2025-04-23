@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanishka Bhor – Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      background-color: #3399ff;
+      width: 220px;
+      padding: 30px 20px;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 1.5em;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar li {
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      flex: 1;
+      background-color: #f0f8ff;
+      padding: 30px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    p.subtitle {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .header-buttons a {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 16px;
+      background-color: #3399ff;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #3366cc;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .cert-grid a {
+      display: block;
+      background: #fff;
+      border: 2px solid #3399ff;
+      padding: 12px;
+      text-align: center;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #3366cc;
+      transition: 0.2s;
+    }
+    .cert-grid a:hover {
+      background-color: #e6f2ff;
+      transform: scale(1.03);
+    }
+
+    ul.edu-list,
+    ul.skills-list,
+    ul.lang-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.edu-list li,
+    ul.skills-list li,
+    ul.lang-list li {
+      background: #cce0ff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #cce0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header id="home">
+      <img src="tanu.jpeg" alt="Tanishka Bhor" class="profile-pic" />
+      <h1>Tanishka Bhor</h1>
+      <p class="subtitle">First Year Computer Engineering Student at MITAOE</p>
+      <div class="header-buttons">
+        <a href="https://www.linkedin.com/in/tanishka-bhor-b67a49360" target="_blank">LinkedIn</a>
+        <a href="mailto:202401040132@mitaoe.ac.in">Email</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m Tanishka Bhor, a first‑year Computer Engineering student at MITAOE. I’m passionate
+        about coding, open‑source, and building projects that solve real‑world problems.
+        When I’m not studying algorithms or data structures, I enjoy exploring web design,
+        dabbling in Linux environments, and participating in tech workshops.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>10th: 93.40% <a href="https://drive.google.com/file/d/15qf7UW23bfQ-4r8_GLjy9FIKx2j2rb86/view?usp=drivesdk" target="_blank">[Certificate]</a></li>
+        <li>12th: 82.17% <a href="https://drive.google.com/file/d/164dKJWaTLLHycO_V2XyHd7SV9s3yS9B6/view?usp=drivesdk" target="_blank">[Certificate]</a></li>
+        <li>JEE Mains: 85 <a href="https://drive.google.com/file/d/1-zihx41Ad2vA8qRs4_N8hbtItKlOgwgh/view?usp=drivesdk">[Certificate]</a></li>
+        <li>CET: 97.12 <a href="https://drive.google.com/file/d/1-jAzxPFMS1Hc9rWxU94uY-3NdDhQYoBs/view?usp=drivesdk">[Certificate]</a></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML, CSS, JavaScript (Basic)</li>
+        <li>C/C++ Programming</li>
+        <li>Linux Command Line</li>
+        <li>Git & GitHub Basics</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="lang-list">
+        <li>English – Fluent</li>
+        <li>Hindi – Fluent</li>
+        <li>Marathi – Native</li>
+      </ul>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="cert-grid">
+        <a href="https://drive.google.com/file/d/167vAYXCklSQlubI0fd8lFb3Zf0W4CMrb/view?usp=drivesdk" target="_blank">Cisco Certificate</a>
+        <a href="https://drive.google.com/file/d/1sfEGPkTv7jjr2R7Am_o1aR35DD-aHgrt/view?usp=drivesdk" target="_blank">NASSCOM Certificate</a>
+        <a href="https://drive.google.com/file/d/1AcMQXOTL8CtEmtcyOEXRGeFXLOmKm3LM/view?usp=drivesdk" target="_blank">Linux Certificate</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Tanishka Bhor</p>
+      <p>Email: 202401040132@mitaoe.ac.in</p>
+    </footer>
+  </div>
+
+</body>
+</html>
